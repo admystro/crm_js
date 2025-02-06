@@ -43,18 +43,25 @@
           <div class="col-12">
             <div class="card">
               <div class="user-action-container">
-                <form action="#" class="add-manager-form">
-                  <div class="form-group input-group-container label-is"><input class="form-control" type="text"
-                      id="first_name" name="first_name" value=""><label for="first_name">Имя</label></div>
-                  <div class="form-group input-group-container label-is"><input class="form-control" type="text"
-                      id="user_login" value=""><label for="user_login">Логин</label></div>
-                  <div class="form-group input-group-container label-is"><input class="form-control" type="text"
-                      id="user_password" value=""><label for="user_password">Пароль</label></div>
-                  <div class="btn-container btn btn-xl btn-primary">
-                    <div class="btn-wrapper"><span class="material-icons button-icon">add</span><input type="submit"
-                        value="Добавить"></div>
+                <div class="add-manager-form">
+                  <div class="form-group input-group-container label-is">
+                    <input class="form-control" type="text" id="first_name" name="first_name" value="">
+                    <label for="first_name">Имя</label>
                   </div>
-                </form>
+                  <div class="form-group input-group-container label-is">
+                    <input class="form-control" type="text" id="user_login" value="">
+                    <label for="user_login">Логин</label>
+                  </div>
+                  <div class="form-group input-group-container label-is">
+                    <input class="form-control" type="text" id="user_password" value="">
+                    <label for="user_password">Пароль</label>
+                  </div>
+                  <div class="btn-container btn btn-xl btn-primary">
+                    <div class="btn-wrapper">
+                      <button id="add_btn">Добавить</button>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="sorting-table table-1738836854514">
                 <div>
@@ -62,21 +69,13 @@
                     <table class="table table-hover">
                       <thead>
                         <tr>
-                          <th tabindex="0" aria-label="Имя sortable" class="sortable">Имя<span class="order"><span
-                                class="dropdown"><span class="caret"></span></span><span class="dropup"><span
-                                  class="caret"></span></span></span></th>
-                          <th tabindex="0" aria-label="Логин sortable" class="sortable">Логин<span class="order"><span
-                                class="dropdown"><span class="caret"></span></span><span class="dropup"><span
-                                  class="caret"></span></span></span></th>
+                          <th tabindex="0" aria-label="Имя sortable" class="sortable">Имя</th>
+                          <th tabindex="0" aria-label="Логин sortable" class="sortable">Логин</th>
                           <th tabindex="0">Онлайн</th>
                         </tr>
                       </thead>
-                      <tbody>
-                        <tr>
-                          <td>test</td>
-                          <td>user16</td>
-                          <td>2024-12-21 15:29:24</td>
-                        </tr>
+                      <tbody id="result_table">
+
                       </tbody>
                     </table>
                   </div>
@@ -97,8 +96,8 @@
             </div>
           </div>
         </div>
-        <div class="alert alert-danger d-none" role="alert"></div>
-        <div class="alert alert-success d-none" role="alert"></div>
+        <div id="red_alert" class="alert alert-danger d-none" role="alert"></div>
+        <div id="green_alert" class="alert alert-success d-none" role="alert"></div>
       </div>
     </main>
     <footer class="footer bg-dark m-0">
@@ -115,7 +114,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
-  <script type="module" src="./js/script.js"></script>
+  <script type="module" src="../js/script.js"></script>
 </body>
 
 </html>

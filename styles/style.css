@@ -46,7 +46,7 @@ code {
 
 .theme-switcher .form-check-input:not(:checked) {
   background-color: #e7e7e0;
-  background-image: url(../img/sun.webp);
+  background-image: url(../sources/sun.webp);
   border-color: #e7e7e0;
 }
 
@@ -56,7 +56,7 @@ code {
 
 .theme-switcher .form-check-input:checked {
   background-color: gray;
-  background-image: url(../img/moon.webp);
+  background-image: url(../sources/moon.webp);
   border-color: gray;
 }
 
@@ -89,7 +89,7 @@ ul[class] {
 }
 
 .weekPicker-input-wrapper:after {
-  background-image: url(../img/arrow-down.svg);
+  background-image: url(../sources/arrow-down.svg);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: contain;
