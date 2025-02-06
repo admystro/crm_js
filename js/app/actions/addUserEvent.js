@@ -1,6 +1,6 @@
 import { addedUsers } from "../config.js"
-import { greenAlert, redAlert, resultTable, userLogin, userName, userPassword } from "../elements.js"
-import { addUsers, saveLocal } from "../utils.js"
+import { greenAlert, redAlert, resultTable, userLogin, userName, userPassword } from "../utils/elements.js"
+import { addUsers, saveLocal } from "../utils/utils.js"
 
 export function addUserEvent() {
   // создаем объект

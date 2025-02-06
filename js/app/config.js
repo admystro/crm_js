@@ -1,5 +1,5 @@
-import { resultTable } from "./elements.js";
-import { addUsers, getLocal } from "./utils.js";
+import { resultTable } from "./utils/elements.js";
+import { addUsers, getLocal } from "./utils/utils.js";
 
 // создаем массив для храения добавленных пользователей
 export const addedUsers = getLocal('addedUsers') ?? [];
