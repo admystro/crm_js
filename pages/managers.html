@@ -11,6 +11,151 @@
 </head>
 
 <body>
+  <div class="main-wrapper">
+    <header class="reporting-header bg-dark">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-dark  bg-dark"><a class="navbar-brand" href="/">Офис:
+            Хулиганы</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+            aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav m-auto">
+              <li class="nav-item"><a class="nav-link" href="/">Отчёты</a></li>
+              <li class="nav-item"><a class="nav-link" href="/statistics">Статистика</a></li>
+              <li class="nav-item "><a class="nav-link" href="/salaries">Зарплаты</a></li>
+              <li class="nav-item "><a class="nav-link" href="/managers">Менеджеры</a></li>
+              <li class="nav-item "><a class="nav-link" href="/change-password">Смена пароля</a></li>
+              <li class="nav-item "><a class="nav-link" href="/wallets">Кошельки</a></li>
+            </ul>
+            <div class="d-flex align-items-center gap-4">
+              <div class="theme-switcher form-check form-switch m-0 p-0"><input class="form-check-input m-0"
+                  type="checkbox" role="switch" id="flexSwitchCheckDefault"></div>
+              <div class="form-inline logout-button-container"><button class="btn btn-outline-success">Выход</button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container-fluid">
+        <div class="manager-page row pb-5 pt-5">
+          <div class="col-12">
+            <div class="card">
+              <div class="user-action-container">
+                <form action="#" class="add-manager-form">
+                  <div class="form-group input-group-container label-is"><input class="form-control" type="text"
+                      id="first_name" name="first_name" value=""><label for="first_name">Имя</label></div>
+                  <div class="form-group input-group-container label-is"><input class="form-control" type="text"
+                      id="user_login" value=""><label for="user_login">Логин</label></div>
+                  <div class="form-group input-group-container label-is"><input class="form-control" type="text"
+                      id="user_password" value=""><label for="user_password">Пароль</label></div>
+                  <div class="btn-container btn btn-xl btn-primary">
+                    <div class="btn-wrapper"><span class="material-icons button-icon">add</span><input type="submit"
+                        value="Добавить"></div>
+                  </div>
+                </form>
+              </div>
+              <div class="sorting-table table-1738836854514">
+                <div>
+                  <div class="react-bootstrap-table">
+                    <table class="table table-hover table-bordered">
+                      <thead>
+                        <tr>
+                          <th tabindex="0" aria-label="Имя sortable" class="sortable">Имя<span class="order"><span
+                                class="dropdown"><span class="caret"></span></span><span class="dropup"><span
+                                  class="caret"></span></span></span></th>
+                          <th tabindex="0" aria-label="Логин sortable" class="sortable">Логин<span class="order"><span
+                                class="dropdown"><span class="caret"></span></span><span class="dropup"><span
+                                  class="caret"></span></span></span></th>
+                          <th tabindex="0">Онлайн</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Лия</td>
+                          <td>user16</td>
+                          <td>2024-12-21 15:29:24</td>
+                        </tr>
+                        <tr>
+                          <td>Стугна</td>
+                          <td>user28</td>
+                          <td>2024-12-24 14:14:20</td>
+                        </tr>
+                        <tr>
+                          <td>Кенас</td>
+                          <td>kekas</td>
+                          <td>2024-12-25 09:32:24</td>
+                        </tr>
+                        <tr>
+                          <td>Олег Борчик</td>
+                          <td>user32</td>
+                          <td>2025-01-17 10:47:54</td>
+                        </tr>
+                        <tr>
+                          <td>Игоряс</td>
+                          <td>user39</td>
+                          <td>2024-12-28 13:30:20</td>
+                        </tr>
+                        <tr>
+                          <td>Дима Волл</td>
+                          <td>user73</td>
+                          <td>2024-12-24 14:13:41</td>
+                        </tr>
+                        <tr>
+                          <td>Олег Маями</td>
+                          <td>user74</td>
+                          <td>2025-01-17 09:14:16</td>
+                        </tr>
+                        <tr>
+                          <td>Коломоец</td>
+                          <td>user89</td>
+                          <td>2024-12-13 12:19:31</td>
+                        </tr>
+                        <tr>
+                          <td>Давид</td>
+                          <td>new33</td>
+                          <td>2024-12-21 14:56:38</td>
+                        </tr>
+                        <tr>
+                          <td>Водное поло</td>
+                          <td>new20</td>
+                          <td>2024-12-21 12:30:16</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="pagination-block d-flex justify-content-between align-items-center">
+                    <div class="dropdown"><button type="button" id="dropdown-basic-button" aria-expanded="false"
+                        class="dropdown-toggle btn btn-primary">10</button></div>
+                    <div>1 / 8</div>
+                    <ul class="pagination">
+                      <li class="page-item active"><span class="page-link">1<span
+                            class="visually-hidden">(current)</span></span></li>
+                      <li class="page-item"><a class="page-link" role="button" tabindex="0" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" role="button" tabindex="0" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" role="button" tabindex="0" href="#">&gt;&gt;</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="alert alert-danger d-none" role="alert"></div>
+        <div class="alert alert-success d-none" role="alert"></div>
+      </div>
+    </main>
+    <footer class="footer bg-dark m-0">
+      <div class="container-fluid">
+        <ul class="m-0 p-4 d-flex align-items-center justify-content-center gap-4"
+          style="color: rgba(255, 255, 255, 0.55);">
+          <li>Курс BTC: 97&nbsp;634 $</li>
+          <li>Курс USD: 41.66 грн</li>
+        </ul>
+      </div>
+    </footer>
+  </div>
 
 
 
