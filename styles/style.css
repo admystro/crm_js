@@ -657,3 +657,7 @@ h5 {
   font-weight: 700;
   border: none;
 }
+
+.loading {
+  color: #D2D2B0;
+}

@@ -9,7 +9,7 @@ export function getLocal(key) {
 }
 
 // функция хелпер для вывода
-export function addUsers(name, login) {
-  const yes = `<tr><td>${name}</td><td>${login}</td><td>2025-11-11 14:25</td></tr>`
-  return (name, login) ? yes : ''
+export function addUsers(item) {
+  const yes = `<tr><td>${item.name}</td><td>${item.login}</td><td>2025-11-11 14:25</td></tr>`
+  return (item.name, item.login) ? yes : ''
 }
